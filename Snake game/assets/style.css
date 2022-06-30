@@ -1,0 +1,65 @@
+:root{
+    --colorGreen: lightgreen;
+    --colorBlack: #040305;
+}
+
+body{
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(82, 75, 75, 0.712);
+}
+
+.title{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-size: 3em;
+ color: var(--colorBlack);
+}
+
+.container span{
+    animation: brilho 5s ease-in-out infinite;
+}
+
+.container span:nth-of-type(2){
+    animation-delay: 0.25s;
+}
+.container span:nth-of-type(3){
+    animation-delay: 0.50s;
+}
+.container span:nth-of-type(4){
+    animation-delay: 0.75s;
+}
+.container span:nth-of-type(5){
+    animation-delay: 1s;
+}
+.container span:nth-of-type(6){
+    animation-delay: 1.25s;
+}
+.container span:nth-of-type(7){
+    animation-delay: 1.50s;
+}
+.container span:nth-of-type(8){
+    animation-delay: 1.75s;
+}
+
+.container span:nth-of-type(9){
+    animation-delay: 2s;
+}
+
+.E{
+    margin-right: 1vw;
+}
+
+@keyframes brilho{
+    0%{
+        color: #fff;
+        text-shadow: 0 0 12px var(--colorGreen), 0 0 50px var(--colorGreen), 0 0 100px var(--colorGreen);
+    }
+    10%, 90%{
+color: var(--colorBlack);
+text-shadow: none;
+    }
+}
